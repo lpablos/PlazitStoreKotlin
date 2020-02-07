@@ -13,36 +13,40 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textDescrView"
+            android:id="@+id/txtDetailTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:transitionName="transitionTitle"
             android:textSize="24sp"
             tools:text="Titulo"/>
 
         <TextView
-            android:id="@+id/textDescriptionView"
+            android:id="@+id/txtDetailDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:transitionName="transitionDesc"
             android:textSize="18sp"
             tools:text="Descripción"/>
 
         <TextView
-            android:id="@+id/textPriceView"
+            android:id="@+id/txtDetailPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-             android:textColor="@color/colorAccent"
+            android:textColor="@color/colorAccent"
             android:textSize="20sp"
             android:text="TextView"
+            android:transitionName="transitionPrice"
             tools:text="$$$"/>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txtDetailLongDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="$$$" />
+            android:layout_marginTop="10dp"
+            tools:text="@string/loremipsum" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
